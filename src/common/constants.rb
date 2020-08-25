@@ -3,7 +3,7 @@
 module Onfido
 
   LOCALIZE_RESULTS_REGEX_IOS = /"(.+)"\s*=\s*"(.+)"/
-  PLARFORMS = ['ios', 'android']
+  PLATFORMS = ['ios', 'android']
   LANGUAGES = ['en_US', 'de_DE', 'es_ES', 'fr_FR']
 
 end

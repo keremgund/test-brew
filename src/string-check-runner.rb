@@ -20,7 +20,7 @@ module Onfido
 
     def run
       DirHelper.create_clean_directory(TMP_FOLDER)
-      puts compareHashes(getProjectStringsAsHash, getLokaliseStringsAsHash)
+      compareHashes(getProjectStringsAsHash, getLokaliseStringsAsHash)
     end
 
     private

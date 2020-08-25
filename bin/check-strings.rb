@@ -5,8 +5,8 @@ require_relative '../src/string-check-runner'
 require_relative '../src/common/constants'
 
 options = Slop.parse do |o|
-  o.string  '--lang', '-l', "Language code, options: #{LANGUAGES.join(', ')}", required: true
-  o.string  '--platform', '-p', "Platform value, options: #{PLARFORMS.join(', ')}, required: true
+  o.string  '--lang', '-l', "Language code, options: #{Onfido::LANGUAGES.join(', ')}", required: true
+  o.string  '--platform', '-p', "Platform value, options: #{Onfido::PLATFORMS.join(', ')}", required: true
   o.string  '--lokalise-token', '-lt', 'Lokalise token to access strings', required: true
   o.string  '--lokalise-project-id', '-lpi', 'Lokalise project id', required: true
   o.string  '--project-path', '-pp', 'Path to project root', required: true
