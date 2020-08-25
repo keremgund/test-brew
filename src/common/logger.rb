@@ -17,6 +17,10 @@ module Onfido
       puts("ℹ️: #{message}")
     end
 
+    def self.success(message)
+      puts("✅: #{message}")
+    end
+
     def self.debug(message)
       puts(message)
     end

@@ -8,7 +8,7 @@ require 'open3'
 require_relative 'common/constants'
 require_relative 'common/logger'
 require_relative 'common/execution-steps'
-require_relative 'model/localisation-key'
+require_relative 'models/localisation-key'
 
 module Onfido
 
@@ -24,7 +24,7 @@ module Onfido
     def run
       steps = ["List strings on lokalise with #{tag} tag for #{platform}", 'Retrive string translations from lokalise',
               'Update strings on project files']
-      execution_steps = ExecutionSteps.new('Steps to be performed', steps)
+      execution_steps = ExecutionSteps.new('Steps', steps)
 
       begin
         key_id_list = get_key_id_list
@@ -35,7 +35,7 @@ module Onfido
           update_key(key)
         }
         execution_steps.success
-        Logger.info_success('Steps completed.')
+        Logger.success('Steps completed.')
       rescue Exception => exception
         Logger.error(exception.message)
         execution_steps.failed
