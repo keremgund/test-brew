@@ -62,9 +62,9 @@ module Onfido
     def getProjectStringsAsHash
       project_file = ''
       if platform == 'ios'
-        project_file = "#{project_path}/#{lang_project}.lproj/Localizable.strings"
+        project_file = "#{project_path}/SDK/Assets/#{lang_project}.lproj/Localizable.strings"
       elsif platform == 'android'
-        project_file = "#{project_path}/values#{lang_project}/strings.xml"
+        project_file = "#{project_path}/onfido-capture-sdk-core/src/main/res/values#{lang_project}/strings.xml"
       end
       project_hash = FileParser.to_hash(project_file)
     end
