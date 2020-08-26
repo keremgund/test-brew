@@ -57,6 +57,9 @@ module Onfido
         raise 'lokalise2 file download command has failed'
       end
       lokalise_hash = FileParser.to_hash("#{TMP_FOLDER}/#{lang}/")
+      lokalise_hash.transform_keys { |key|
+        key.gsub("::", "_")
+      }
     end
 
     def getProjectStringsAsHash
@@ -67,6 +70,8 @@ module Onfido
         project_file = "#{project_path}/onfido-capture-sdk-core/src/main/res/values#{lang_project}/strings.xml"
       end
       project_hash = FileParser.to_hash(project_file)
+      return project_hash
+
     end
 
     def file_format

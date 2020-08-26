@@ -88,8 +88,9 @@ module Onfido
       def update_key(key)
         Logger.info("Updating key: #{key}")
         lang_code = get_lang_code(key)
+        new_key = key.key_name.gsub("::", "_")
         if platform == 'ios'
-          entry = "\"#{key.key_name}\" = \"#{key.translation_value}\";\n"
+          entry = "\"#{new_key}\" = \"#{key.translation_value}\";\n"
           add_substitute_for_ios(entry, get_strings_file(lang_code), key)
         else
           ##TODO handle android case here
