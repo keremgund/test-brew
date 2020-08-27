@@ -11,6 +11,10 @@ This repo helps projects to integrate with SDK copy management tool (currently L
 
 This section will contain the necessary instructions to enable you to run the project.
 
+- You will need Lokalise token and project id values to run scripts.
+- To retrieve token, visit https://app.lokalise.com/profile page and click on "Api Tokens" link. You can create one if you don't have already.
+- To retrieve project id, go to dashboard page of related project on lokalise, check url on browser and it should have following format: https://app.lokalise.com/project/{YOUR_PROJECT_ID_HERE}/?
+
 #### Tools
 
 - Ruby must be installed in system where you run scripts. Suggested version is 2.6.x.
