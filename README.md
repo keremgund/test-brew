@@ -16,6 +16,7 @@ This section will contain the necessary instructions to enable you to run the pr
 - Ruby must be installed in system where you run scripts. Suggested version is 2.6.x.
 - Run `gem install bundler` to install ruby dependency manager
 - Run `bundle install` to install necessary ruby packages
+- Install lokalise cli tool. Please check this [page](https://github.com/lokalise/lokalise-cli-2-go) to see how to install.
 
 ## Fetching Strings
 

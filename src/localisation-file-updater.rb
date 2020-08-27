@@ -65,7 +65,7 @@ module Onfido
           --token #{lokalise_token}")
 
         unless status.success?
-          raise 'lokalise2 key list command has failed'
+          raise "lokalise2 key list command has failed: #{stderr}"
         end
 
         JSON.parse(key_response)
@@ -79,7 +79,7 @@ module Onfido
           --token #{lokalise_token}")
 
         unless status.success?
-          raise 'lokalise2 key list command has failed'
+          raise "lokalise2 key list command has failed #{stderr}"
         end
         dictionary = JSON.parse(body)
         id_list = dictionary['keys'].map { |item| item['key_id'] }
