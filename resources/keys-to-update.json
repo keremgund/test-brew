@@ -1,7 +1,7 @@
 {
-"onfido_accessibility_camera_capture_shutter": "kerem_onfido_accessibility_camera_capture_shutter",
-"onfido_accessibility_camera_document_capture_view": "kerem_onfido_accessibility_camera_document_capture_view",
-"onfido_accessibility_camera_face_capture_view": "kerem_onfido_accessibility_camera_face_capture_view",
-"onfido_capture_face_step_1": "kerem_onfido_capture_face_step_1",
-"onfido_capture_face_step_2": "kerem_onfido_capture_face_step_2"
+"accessibility_camera_capture_shutter": "test_accessibility_camera_capture_shutter",
+"accessibility_camera_document_capture_view": "test_accessibility_camera_document_capture_view",
+"accessibility_camera_face_capture_view": "test_accessibility_camera_face_capture_view",
+"capture_face_step_1": "test_capture_face_step_1",
+"capture_face_step_2": "test_capture_face_step_2"
 }

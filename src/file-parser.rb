@@ -11,8 +11,8 @@ module Onfido
 
     ##
     # This class reads strings file and transforms each  "key"="value" line to hash key/value and returns hash
-    # e.g "onfido_blur_detection_subtitle" = "Make sure your \"dummy string\" details are clear and unobstructed" should be extracted to
-    # string_map["onfido_blur_detection_subtitle"] = "Make sure your \"dummy string\" details are clear and unobstructed"
+    # e.g "blur_detection_subtitle" = "Make sure your \"dummy string\" details are clear and unobstructed" should be extracted to
+    # string_map["blur_detection_subtitle"] = "Make sure your \"dummy string\" details are clear and unobstructed"
     ##
 
     def self.to_hash(file_path)
